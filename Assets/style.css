@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+main {
+  padding: 0 15px;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -101,4 +105,73 @@
   padding: 10px 15px;
   font-size: 14px;
   font-family: Helvetica;
+}
+
+/* Cover section */
+@media (min-width:1024px) {
+  .cover {
+    height: 75vh;
+    max-height: 560px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .cover {
+    height: 60vh
+  }
+}
+
+@media (min-width:768px) {
+  .cover {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .big-cover {
+    width: 66%;
+    height: 100%;
+    margin: 5px;
+  }
+
+  .small-cover {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*
+  .small-cover article {
+    height: 48%;
+    margin: 5px;
+  } */
+}
+
+.big-cover {
+  display: flex;
+  /* background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/kylie-jenner-shopify-breach-796x354.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.cover-article {
+  min-height: 200px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background: rgba(0, 0, 0, 0.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  position: relative;
+}
+
+.cover-article-title {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  font-size: 2rem;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
 }
