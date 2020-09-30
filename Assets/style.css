@@ -1,112 +1,104 @@
-*
-{
- box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-.top-nav
-{
- display: flex;
- justify-content: space-between;
- background-color: #131313;
- padding: 9px;
- font-size: 13px;
- font-family: Arial, Helvetica, sans-serif;
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #131313;
+  padding: 9px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-device-width: 767px) {
-    .top-nav {
-      display: none;
-    }
+  .top-nav {
+    display: none;
+  }
 }
 
-.top-nav li
-{
- display: inline;
- margin: 0 8px;
+.top-nav li {
+  display: inline;
+  margin: 0 8px;
 }
 
-.top-nav a
-{
- text-decoration: none;
- color: #fff;
+.top-nav a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.top-nav-left
-{
- float: left;
+.top-nav-left {
+  float: left;
 }
 
-.main-nav
-{
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#fefefe;
-  padding:2px;
+  background-color: #fefefe;
+  padding: 2px 15px;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   height: 56px;
 }
 
-.main-nav-left li
-{
- display: inline;
- margin-right: 15px;
+.main-nav-left li {
+  display: inline;
+  margin-right: 15px;
 }
 
-.main-nav-left a
-{
- color: #aaa;
- text-decoration: none;
- padding:5px;
+.main-nav-left a {
+  color: #aaa;
+  text-decoration: none;
+  padding: 5px;
 }
 
-.main-nav-left a:hover
-{
- color: #131313;
+.main-nav-left a:hover {
+  color: #131313;
 }
 
 @media screen and (max-device-width: 1113px) {
-    .main-nav-right *:not(:first-child){
-      display: none;
-    }
+  .main-nav-right *:not(:first-child) {
+    display: none;
+  }
 }
 
-.main-nav-right
-{
- display: inline-flex;
- align-items: center;
- border-left: 1px solid #eee;
+.main-nav-right {
+  display: inline-flex;
+  align-items: center;
+  border-left: 1px solid #eee;
 }
 
-#search-icon
-{
- padding: 10px;
+#search-icon {
+  padding: 10px;
 }
 
-.logo 
-{
- height: auto;
- width: 130px;
+.logo {
+  height: auto;
+  width: 130px;
 }
 
-.counter
-{
- color: red;
- text-decoration: none;
- margin-right: 10px;
+.counter {
+  color: red;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
-.get-tickets
-{
-color: white;
-border: none;
-background-color: #00cccc;
-border-radius: 4px;
-padding: 8.5px;
-font-size: 11px;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
+.get-tickets {
+  color: white;
+  border: none;
+  background-color: #00cccc;
+  border-radius: 4px;
+  padding: 8.5px;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-@
+/* Alert */
+.alert {
+  background-color: #fd3;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-family: Helvetica;
+}
