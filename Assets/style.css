@@ -6,6 +6,11 @@ main {
   padding: 0 15px;
 }
 
+a {
+  text-decoration: none;
+  color: initial;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -108,70 +113,99 @@ main {
 }
 
 /* Cover section */
+/* Ccover section */
+.cover-section {
+  padding: 0.5rem;
+}
+
 @media (min-width:1024px) {
-  .cover {
-    height: 75vh;
-    max-height: 560px;
+  .cover-section {
+    height: 70vh;
   }
 }
 
 @media (min-width:768px) and (max-width:1023px) {
-  .cover {
-    height: 60vh
+  .cover-section {
+    height: 60vh;
   }
 }
 
 @media (min-width:768px) {
-  .cover {
-    display: flex;
-    justify-content: space-between;
+  .cover-section {
+    display: grid;
+    grid-template-columns: 66.66% auto;
+    grid-template-rows: 2;
+    grid-template-areas:
+      "jumbo-right right-top"
+      "jumbo-right right-bottom";
+    grid-gap: 0.5rem;
   }
-
-  .big-cover {
-    width: 66%;
-    height: 100%;
-    margin: 5px;
-  }
-
-  .small-cover {
-    width: 33%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /*
-  .small-cover article {
-    height: 48%;
-    margin: 5px;
-  } */
-}
-
-.big-cover {
-  display: flex;
-  /* background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/kylie-jenner-shopify-breach-796x354.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .cover-article {
-  min-height: 200px;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  background: rgba(0, 0, 0, 0.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
-  position: relative;
+  justify-content: flex-end;
+  padding: 1rem 0.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width:768px) {
+  .top-nav {
+    display: none;
+  }
+
+  .cover-article {
+    min-height: 30vh;
+    margin-bottom: 1rem;
+  }
+}
+
+.cover-article:first-of-type {
+  grid-area: jumbo-right;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/animalfarm-796x448.jpg");
+}
+
+@media (min-width:1024px) {
+  .cover-article:first-of-type {
+    background-image: linear-gradient(rgba(238, 61, 10, 0.5) 15%, rgba(0, 0, 0, 0.95) 60%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/animalfarm-796x448.jpg");
+  }
+}
+
+.cover-article:nth-of-type(2) {
+  grid-area: right-top;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/TNW2020-feature.jpg");
+}
+
+.cover-article:last-of-type {
+  grid-area: right-bottom;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_85e519-796x415.png");
+}
+
+.cover-article-category {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 .cover-article-title {
-  position: absolute;
-  bottom: 10px;
-  right: 5px;
-  font-size: 2rem;
-  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
   color: #fff;
+}
+
+@media (min-width:768px) {
+  .cover-article:first-of-type .cover-article-title {
+    font-size: 3.2rem;
+  }
+}
+
+.cover-article-details {
+  margin-top: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
 }
