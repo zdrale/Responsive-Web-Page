@@ -24,6 +24,23 @@ a {
   .top-nav {
     display: none;
   }
+
+  .main-nav ul
+  {
+    display: none;
+
+  }
+
+  .main-nav-right
+  {
+   margin-left: 520px;
+
+  }
+  #search-icon
+  {
+   border-right: 1px solid #eee;
+  }
+  
 }
 
 .top-nav li {
@@ -78,8 +95,22 @@ a {
   border-left: 1px solid #eee;
 }
 
+#hamburger
+{
+ display: none;
+}
+
+@media screen and (max-device-width: 767px) {
+  
+#hamburger
+{
+ display: inline;
+}
+}
+
 #search-icon {
   padding: 10px;
+  margin-right: 10px;
 }
 
 .logo {
