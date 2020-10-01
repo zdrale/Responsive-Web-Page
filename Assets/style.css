@@ -2,15 +2,16 @@
   box-sizing: border-box;
 }
 
-main {
-  padding: 0 15px;
+body {
+  font-family: sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: initial;
+  color: #000;
 }
 
+/* Header */
 .top-nav {
   display: flex;
   justify-content: space-between;
