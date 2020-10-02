@@ -27,6 +27,14 @@ main section:not(:first-of-type) {
 }
 
 /* Header */
+.nav-wrapper
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -182,6 +190,7 @@ main section:not(:first-of-type) {
 }
 
 /* Alert */
+
 .alert {
   background-color: #fd3;
   padding: 10px 15px;
@@ -191,10 +200,14 @@ main section:not(:first-of-type) {
 
 @media screen and (max-width:767px) {
   .alert {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align:center;
+    font-size: 12px;
+    margin-top: 20px;
   }
+  
+  
 }
 
 /* Cover artciels section */
