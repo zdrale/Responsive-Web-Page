@@ -443,7 +443,7 @@ main section:not(:first-of-type) {
   color: #555;
 }
 
-.latest-link{
+.latest-link {
   font-weight: bold;
 }
 
@@ -702,7 +702,8 @@ main section:not(:first-of-type) {
   }
 }
 
-.legal, .legal-text {
+.legal,
+.legal-text {
   display: flex;
 }
 
