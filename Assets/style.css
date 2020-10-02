@@ -380,7 +380,7 @@ main section:not(:first-of-type) {
   margin-top: 0.5rem;
 }
 
-.funding-cell-head >h4 {
+.funding-cell-head > h4 {
   background-color: #f94640;
   padding: 12px;
   color: #fff;
