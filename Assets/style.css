@@ -673,3 +673,71 @@ color:#f42;
 {
  color: #f42;
 }
+
+.social
+{
+  background: #131313;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  box-sizing: border-box;
+}
+
+.social-icons
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-icons a
+{
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 10px;
+}
+
+.social, .bottom-nav
+{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.social, .bottom-nav li
+{
+ font-size: 13px;
+ margin-right: 10px;
+}
+
+.legal
+{
+  height: 120px;
+  width: 1183px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.
+.legal, .legal-text
+{
+ display: flex;
+}
+
+.legal img
+{
+  width: 40px;
+  margin-right: 5px;
+}
