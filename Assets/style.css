@@ -1,4 +1,4 @@
-*,*::after,*::before {
+*, *::after, *::before {
   box-sizing: border-box;
 }
 
@@ -27,13 +27,11 @@ main section:not(:first-of-type) {
 }
 
 /* Header */
-.nav-wrapper
-{
+.nav-wrapper {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
-  
 }
 
 .top-nav {
@@ -191,7 +189,6 @@ main section:not(:first-of-type) {
 }
 
 /* Alert */
-
 .alert {
   background-color: #fd3;
   padding: 10px 15px;
@@ -203,7 +200,7 @@ main section:not(:first-of-type) {
   .alert {
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align:center;
+    text-align: center;
     font-size: 12px;
     width: 100%;
   }
@@ -531,151 +528,126 @@ main section:not(:first-of-type) {
 }
 
 /* Insights Area */
-
-.insights-wrapper
-{
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- grid-gap: 1.5rem;
+.insights-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
 }
 
 @media screen and (max-width: 1023px) {
   .insights-wrapper {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 767px) {
   .insights-wrapper {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-
- }
-
-.insight-article
-{
- display: flex;
- align-items: flex-end;
- margin-top:1rem;
- background-size: cover;
- background-repeat: no-repeat;
- height: 250px;
- padding:10px;
 }
 
-.hard-work
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg);
+.insight-article {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  padding: 10px;
 }
 
-.apps
-{
- background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_248964-368x276.png);
+.hard-work {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg);
 }
 
-.gear
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-368x276.png);
+.apps {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_248964-368x276.png);
 }
 
-.tech
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/methane_mars_1200-368x276.png);
+.gear {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-368x276.png);
 }
 
-.creative
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg);
+.tech {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/methane_mars_1200-368x276.png);
 }
 
-.podium
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
+.creative {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg);
 }
 
-.insights
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
+.podium {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
 }
 
-.launch
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2-1-368x276.jpg);
+.insights {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
 }
 
-.distract
-{
-  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png);
+.launch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2-1-368x276.jpg);
 }
 
-
-.most-popular a
-{
- color: #fff;
- font-size: 20px;
- font-family: sans-serif;
+.distract {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png);
 }
 
-.most-popular p
-{
- color: #9f9f9e;
- font-size: 13px;
- font-family: sans-serif;
- margin-bottom: 20px;
+.most-popular a {
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
 }
 
-.latest
-{
- padding: 10px 0 60px 15px;
- background:#fef2f1;
+.most-popular p {
+  color: #9f9f9e;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
 }
 
-
-.latets-img
-{
- float: right;
- background-position: center;
- width: 95px;
- height: 95px;
- margin-left: 15px;
- object-fit: cover;
+.latest {
+  padding: 10px 0 60px 15px;
+  background: #fef2f1;
 }
 
-.latest h5, .latest a
-{
-font-size: 16px;
-color:#f42;
+.latets-img {
+  float: right;
+  background-position: center;
+  width: 95px;
+  height: 95px;
+  margin-left: 15px;
+  object-fit: cover;
+}
+
+.latest h5, .latest a {
+  font-size: 16px;
+  color: #f42;
 }
 
 @media screen and (max-width: 767px) {
-  .latets-img{
-
-  height: 75px;
-
- }
-}
-.latest-details
-{
- padding:20px;
+  .latets-img {
+    height: 75px;
+  }
 }
 
-.latest-details li
-{
- padding:5px;
- border-bottom: solid 1px #eee;
- list-style-type: disc;
- font-size: 13px;
- color: #555;
- font-family: sans-serif;
+.latest-details {
+  padding: 20px;
 }
 
-.latest-details li::after
-{
- color: #f42;
+.latest-details li {
+  padding: 5px;
+  border-bottom: solid 1px #eee;
+  list-style-type: disc;
+  font-size: 13px;
+  color: #555;
+  font-family: sans-serif;
 }
 
-.social
-{
+.latest-details li::after {
+  color: #f42;
+}
+
+.social {
   background: #131313;
   color: #fff;
   display: flex;
@@ -686,15 +658,13 @@ color:#f42;
   box-sizing: border-box;
 }
 
-.social-icons
-{
+.social-icons {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.social-icons a
-{
+.social-icons a {
   display: grid;
   place-items: center;
   width: 40px;
@@ -704,21 +674,17 @@ color:#f42;
   margin-right: 10px;
 }
 
-.social, .bottom-nav
-{
+.social, .bottom-nav {
   display: flex;
   justify-content: center;
- 
 }
 
-.bottom-nav li
-{
- font-size: 13px;
- margin-right: 10px;
+.bottom-nav li {
+  font-size: 13px;
+  margin-right: 10px;
 }
 
-.legal
-{
+.legal {
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -730,18 +696,16 @@ color:#f42;
 }
 
 @media screen and (max-width: 767px) {
-  .legal{
-  flex-direction: column;
-  } 
+  .legal {
+    flex-direction: column;
+  }
 }
 
-.legal, .legal-text
-{
- display: flex;
+.legal, .legal-text {
+  display: flex;
 }
 
-.legal img
-{
+.legal img {
   width: 40px;
   margin-right: 5px;
 }
