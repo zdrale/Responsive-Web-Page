@@ -33,6 +33,7 @@ main section:not(:first-of-type) {
   top: 0;
   width: 100%;
   z-index: 5;
+  
 }
 
 .top-nav {
@@ -200,11 +201,11 @@ main section:not(:first-of-type) {
 
 @media screen and (max-width:767px) {
   .alert {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align:center;
     font-size: 12px;
-    margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -212,6 +213,7 @@ main section:not(:first-of-type) {
 .cover-section {
   padding: 0.2rem 0.5rem;
   margin-bottom: 3rem;
+  margin-top: 90px;
 }
 
 @media (min-width:1024px) {
