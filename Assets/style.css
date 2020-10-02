@@ -424,6 +424,21 @@ main section:not(:first-of-type) {
   margin-right: 10px;
   padding-right: 10px;
 }
+ 
+.most-popular a {
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.funding-cell-body li a {
+  font-size: 13px;
+  color: #555;
+}
+
+.funding-cell-footer a {
+  color: #555;
+}
 
 .funding-right-nav a:not(:last-of-type) {
   border-right: 1px solid #f94640;
@@ -466,7 +481,7 @@ main section:not(:first-of-type) {
   box-sizing: content-box;
 }
 
-.funding-cell-head>h4 {
+.funding-cell-head >h4 {
   background-color: #f94640;
   padding: 12px;
   color: #fff;
@@ -474,12 +489,17 @@ main section:not(:first-of-type) {
   padding: 10px 16px 10px 84px;
 }
 
-.funding-cell-head>div {
+.funding-cell-head >div {
   padding: 10px 16px 10px 84px;
   background: rgba(255, 68, 34, 0.08);
 }
 
-.funding-cell-head>div>h5 {
+.latest h5, .latest a {
+  font-size: 16px;
+  color: #f42;
+}
+
+.funding-cell-head >div >h5 {
   font-size: 13px;
   color: #aaa;
 }
@@ -502,11 +522,6 @@ main section:not(:first-of-type) {
   padding: 4px 0;
 }
 
-.funding-cell-body li a {
-  font-size: 13px;
-  color: #555;
-}
-
 .funding-cell-body li a i {
   color: #000;
   font-size: 16px;
@@ -517,10 +532,6 @@ main section:not(:first-of-type) {
   padding: 1rem 1rem 2rem 1rem;
   background-color: #fffaf8;
   border-top: 1px solid rgba(255, 68, 34, .25);
-}
-
-.funding-cell-footer a {
-  color: #555;
 }
 
 .funding-cell-footer .source {
@@ -592,12 +603,6 @@ main section:not(:first-of-type) {
   background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png);
 }
 
-.most-popular a {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-
 .most-popular p {
   color: #9f9f9e;
   font-size: 13px;
@@ -617,11 +622,6 @@ main section:not(:first-of-type) {
   height: 95px;
   margin-left: 15px;
   object-fit: cover;
-}
-
-.latest h5, .latest a {
-  font-size: 16px;
-  color: #f42;
 }
 
 @media screen and (max-width: 767px) {
