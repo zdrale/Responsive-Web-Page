@@ -526,59 +526,73 @@ main section:not(:first-of-type) {
  grid-gap: 1.5rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .insights-wrapper {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .insights-wrapper {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+ }
+
 .insight-article
 {
  display: flex;
  align-items: flex-end;
  margin-top:1rem;
  background-size: cover;
+ background-repeat: no-repeat;
  height: 250px;
  padding:10px;
 }
 
 .hard-work
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg);
 }
 
 .apps
 {
- background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_248964-368x276.png) no-repeat;
+ background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_248964-368x276.png);
 }
 
 .gear
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-368x276.png) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-368x276.png);
 }
 
 .tech
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/methane_mars_1200-368x276.png) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/methane_mars_1200-368x276.png);
 }
 
 .creative
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg);
 }
 
 .podium
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
 }
 
 .insights
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
 }
 
 .launch
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2-1-368x276.jpg) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2-1-368x276.jpg);
 }
 
 .distract
 {
-  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png) no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png);
 }
 
 
@@ -603,9 +617,9 @@ main section:not(:first-of-type) {
  background:#fef2f1;
 }
 
+
 .latets-img
 {
-
  float: right;
  background-position: center;
  width: 95px;
@@ -620,6 +634,13 @@ font-size: 16px;
 color:#f42;
 }
 
+@media screen and (max-width: 767px) {
+  .latets-img{
+
+  height: 75px;
+
+ }
+}
 .latest-details
 {
  padding:20px;
