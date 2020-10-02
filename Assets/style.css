@@ -382,7 +382,6 @@ main section:not(:first-of-type) {
 
 .funding-cell-head > h4 {
   background-color: #f94640;
-  padding: 12px;
   color: #fff;
   overflow: hidden;
   padding: 10px 16px 10px 84px;
@@ -444,7 +443,12 @@ main section:not(:first-of-type) {
   color: #555;
 }
 
-.latest h5, .latest a {
+.latest-link{
+  font-weight: bold;
+}
+
+.latest-title,
+.latest-link {
   font-size: 16px;
   color: #f42;
 }
@@ -490,17 +494,12 @@ main section:not(:first-of-type) {
   box-sizing: content-box;
 }
 
-.funding-cell-head >div {
+.funding-cell-head > div {
   padding: 10px 16px 10px 84px;
   background: rgba(255, 68, 34, 0.08);
 }
 
-.latest h5, .latest a {
-  font-size: 16px;
-  color: #f42;
-}
-
-.funding-cell-head >div >h5 {
+.funding-cell-head > div > h5 {
   font-size: 13px;
   color: #aaa;
 }
@@ -532,7 +531,7 @@ main section:not(:first-of-type) {
   font-size: 13px;
   padding: 1rem 1rem 2rem 1rem;
   background-color: #fffaf8;
-  border-top: 1px solid rgba(255, 68, 34, .25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
 }
 
 .funding-cell-footer .source {
@@ -665,7 +664,7 @@ main section:not(:first-of-type) {
   margin-bottom: 20px;
 }
 
-.social-icons a {
+.social-icon-link {
   display: grid;
   place-items: center;
   width: 40px;
@@ -675,7 +674,8 @@ main section:not(:first-of-type) {
   margin-right: 10px;
 }
 
-.social, .bottom-nav {
+.social,
+.bottom-nav {
   display: flex;
   justify-content: center;
 }
