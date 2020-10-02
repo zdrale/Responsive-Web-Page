@@ -26,13 +26,6 @@ main section:not(:first-of-type) {
   font-weight: bold !important;
 }
 
-.sticky-top {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
 /* Header */
 .top-nav {
   display: flex;
