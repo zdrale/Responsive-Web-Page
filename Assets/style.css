@@ -29,10 +29,10 @@ main section:not(:first-of-type) {
 /* Header */
 .nav-wrapper
 {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 5; */
 }
 
 .top-nav {
@@ -206,8 +206,6 @@ main section:not(:first-of-type) {
     font-size: 12px;
     margin-top: 20px;
   }
-  
-  
 }
 
 /* Cover artciels section */
