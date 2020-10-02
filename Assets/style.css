@@ -422,7 +422,7 @@ main section:not(:first-of-type) {
 @media screen and (max-width: 767px) {
   .funding-right-nav a {
     margin: 5px 0;
-    border: none;
+    border-right: 0 !important;
   }
 }
 
