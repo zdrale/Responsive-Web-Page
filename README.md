@@ -11,8 +11,7 @@ We worked on all the requirements given on this project.
 Aligned all elements with float and flex or grid.
 Used semantic HTML elements for the header, the main content and the footer.
 We styled the elements to look like the real webpage.
-We used some CSS positioning techniques like Flexbox and Grid. We have ignored any ads, comments or interactive elements (which use JavaScript) and media queries.
-
+We used some CSS positioning techniques like Flexbox and Grid.
 ## Built With
 
 - HTML5
