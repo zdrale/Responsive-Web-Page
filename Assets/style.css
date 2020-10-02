@@ -111,6 +111,14 @@ main section:not(:first-of-type) {
   }
 }
 
+.mnr-list-item {
+  margin-left: 15px;
+}
+
+.mnr-list-item:nth-of-type(2) {
+  display: none;
+}
+
 .main-nav-left .mnl-list-item,
 .main-nav-right .mnr-list-item:not(:last-of-type) {
   display: inline;
@@ -141,14 +149,6 @@ main section:not(:first-of-type) {
     display: flex;
     justify-content: flex-end;
   }
-}
-
-.mnr-list-item {
-  margin-left: 15px;
-}
-
-.mnr-list-item:nth-of-type(2) {
-  display: none;
 }
 
 .mnr-list-item:nth-of-type(2) .mnr-link {
@@ -380,6 +380,14 @@ main section:not(:first-of-type) {
   margin-top: 0.5rem;
 }
 
+.funding-cell-head >h4 {
+  background-color: #f94640;
+  padding: 12px;
+  color: #fff;
+  overflow: hidden;
+  padding: 10px 16px 10px 84px;
+}
+
 .news h4:hover {
   color: #f42;
   text-decoration: underline;
@@ -420,7 +428,11 @@ main section:not(:first-of-type) {
   margin-right: 10px;
   padding-right: 10px;
 }
- 
+
+.funding-cell-footer a {
+  color: #555;
+}
+
 .most-popular a {
   color: #fff;
   font-size: 20px;
@@ -432,8 +444,9 @@ main section:not(:first-of-type) {
   color: #555;
 }
 
-.funding-cell-footer a {
-  color: #555;
+.latest h5, .latest a {
+  font-size: 16px;
+  color: #f42;
 }
 
 .funding-right-nav a:not(:last-of-type) {
@@ -475,14 +488,6 @@ main section:not(:first-of-type) {
 .funding-cell-head {
   position: relative;
   box-sizing: content-box;
-}
-
-.funding-cell-head >h4 {
-  background-color: #f94640;
-  padding: 12px;
-  color: #fff;
-  overflow: hidden;
-  padding: 10px 16px 10px 84px;
 }
 
 .funding-cell-head >div {
