@@ -396,14 +396,41 @@ main section:not(:first-of-type) {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .funding-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.funding-right-nav {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .funding-right-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .funding-right-nav a {
   font-size: 16px;
   font-family: sans-serif;
   color: #f94640;
-  border-right: 1px solid #f94640;
-  margin-top: 15px;
   margin-right: 10px;
   padding-right: 10px;
+}
+
+.funding-right-nav a:not(:last-of-type) {
+  border-right: 1px solid #f94640;
+}
+
+@media screen and (max-width: 767px) {
+  .funding-right-nav a {
+    margin: 5px 0;
+    border: none;
+  }
 }
 
 .funding-body {
@@ -486,6 +513,7 @@ main section:not(:first-of-type) {
   font-size: 13px;
   padding: 1rem 1rem 2rem 1rem;
   background-color: #fffaf8;
+  border-top: 1px solid rgba(255, 68, 34, .25);
 }
 
 .funding-cell-footer a {
