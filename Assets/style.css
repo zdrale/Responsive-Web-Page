@@ -1,4 +1,4 @@
-* {
+*,*::after,*::before {
   box-sizing: border-box;
 }
 
@@ -515,4 +515,127 @@ main section:not(:first-of-type) {
 
 .funding-cell-footer .source {
   color: #aaa !important;
+}
+
+/* Insights Area */
+
+.insights-wrapper
+{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 1.5rem;
+}
+
+.insight-article
+{
+ display: flex;
+ align-items: flex-end;
+ margin-top:1rem;
+ background-size: cover;
+ height: 250px;
+ padding:10px;
+}
+
+.hard-work
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg) no-repeat;
+}
+
+.apps
+{
+ background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_248964-368x276.png) no-repeat;
+}
+
+.gear
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-368x276.png) no-repeat;
+}
+
+.tech
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/methane_mars_1200-368x276.png) no-repeat;
+}
+
+.creative
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg) no-repeat;
+}
+
+.podium
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png) no-repeat;
+}
+
+.insights
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png) no-repeat;
+}
+
+.launch
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2-1-368x276.jpg) no-repeat;
+}
+
+.distract
+{
+  background: linear-gradient(rgba(0,0,0,0),#000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png) no-repeat;
+}
+
+
+.most-popular a
+{
+ color: #fff;
+ font-size: 20px;
+ font-family: sans-serif;
+}
+
+.most-popular p
+{
+ color: #9f9f9e;
+ font-size: 13px;
+ font-family: sans-serif;
+ margin-bottom: 20px;
+}
+
+.latest
+{
+ padding: 10px 0 60px 15px;
+ background:#fef2f1;
+}
+
+.latets-img
+{
+
+ float: right;
+ background-position: center;
+ width: 95px;
+ height: 95px;
+ margin-left: 15px;
+ object-fit: cover;
+}
+
+.latest h5, .latest a
+{
+font-size: 16px;
+color:#f42;
+}
+
+.latest-details
+{
+ padding:20px;
+}
+
+.latest-details li
+{
+ padding:5px;
+ border-bottom: solid 1px #eee;
+ list-style-type: disc;
+ font-size: 13px;
+ color: #555;
+ font-family: sans-serif;
+}
+
+.latest-details li::after
+{
+ color: #f42;
 }
