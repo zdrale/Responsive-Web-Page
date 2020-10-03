@@ -23,9 +23,10 @@ We used some CSS positioning techniques like Flexbox and Grid.
 
 ## Authors
 
-👤 **Silas Kalu**
+👤 **CY Kalu**
 
 - GitHub: [@cyonii ](https://github.com/cyonii )
+- Twitter: [@theOnuoha](https://twitter.com/theOnuoha)
 - LinkedIn: [@silas-kalu](https://www.linkedin.com/in/silas-kalu-2a9a13199/ )
 
 👤 **Nikola Zdrale**
