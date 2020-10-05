@@ -269,13 +269,7 @@ main section:not(:first-of-type) {
 }
 
 /* Latest funding section */
-.funding-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
+
 
 .funding-right-nav {
   margin: 10px 0;
