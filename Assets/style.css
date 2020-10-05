@@ -255,7 +255,7 @@ main section:not(:first-of-type) {
   margin-top: 0.5rem;
 }
 
-.funding-cell-head>h4 {
+.funding-cell-head > h4 {
   background-color: #f94640;
   color: #fff;
   overflow: hidden;
@@ -329,12 +329,12 @@ main section:not(:first-of-type) {
   box-sizing: content-box;
 }
 
-.funding-cell-head>div {
+.funding-cell-head > div {
   padding: 10px 16px 10px 84px;
   background: rgba(255, 68, 34, 0.08);
 }
 
-.funding-cell-head>div>h5 {
+.funding-cell-head > div > h5 {
   font-size: 13px;
   color: #aaa;
 }
@@ -497,7 +497,7 @@ main section:not(:first-of-type) {
   justify-content: center;
 }
 
-.bottom-nav li a {
+.bottom-nav-link {
   font-size: 13px;
   margin-right: 10px;
   color: #aaa;
