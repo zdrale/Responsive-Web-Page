@@ -29,11 +29,14 @@ main section:not(:first-of-type) {
 }
 
 /* Header */
-.nav-wrapper {
+.header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
+}
+.nav-wrapper {
+  position: relative;
 }
 
 .top-nav {
@@ -43,12 +46,6 @@ main section:not(:first-of-type) {
   padding: 9px;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-@media screen and (max-width: 767px) {
-  .top-nav {
-    display: none;
-  }
 }
 
 .tn-list-item {
@@ -77,24 +74,14 @@ main section:not(:first-of-type) {
   font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 1023px) {
-  .main-nav {
-    padding-left: 0;
-  }
-}
-
 /* Dark logo */
 .dark-logo-wrapper {
+  height: 100%;
   background: #000;
-  padding: 0.9rem 1rem;
+  padding: 0 1rem;
   margin-right: 0.5rem;
   display: none;
-}
-
-@media screen and (max-width: 1023px) {
-  .dark-logo-wrapper {
-    display: inline-flex;
-  }
+  position: absolute;
 }
 
 .dark-logo-wrapper .dark-logo {
@@ -103,12 +90,6 @@ main section:not(:first-of-type) {
 
 .main-nav-left {
   display: inline-flex;
-}
-
-@media screen and (max-width: 767px) {
-  .main-nav-left:first-of-type {
-    display: none;
-  }
 }
 
 .mnr-list-item {
@@ -143,28 +124,8 @@ main section:not(:first-of-type) {
   border-left: 1px solid #eee;
 }
 
-@media screen and (max-width: 767px) {
-  .main-nav-right {
-    width: auto;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
 .mnr-list-item:nth-of-type(2) .mnr-link {
   color: #f42;
-}
-
-@media screen and (max-width: 767px) {
-  .mnr-list-item:nth-of-type(2) {
-    display: inline;
-  }
-}
-
-@media screen and (max-width: 1113px) {
-  .mnr-list-item:not(:first-child):not(:nth-of-type(2)) {
-    display: none;
-  }
 }
 
 .logo {
@@ -197,45 +158,11 @@ main section:not(:first-of-type) {
   font-family: Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 767px) {
-  .alert {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 12px;
-    width: 100%;
-  }
-}
-
 /* Cover artciels section */
 .cover-section {
   padding: 0.2rem 0.5rem;
   margin-bottom: 3rem;
   margin-top: 90px;
-}
-
-@media (min-width: 1024px) {
-  .cover-section {
-    height: 70vh;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .cover-section {
-    height: 60vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .cover-section {
-    display: grid;
-    grid-template-columns: 66.66% auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "jumbo-cover right-top"
-      "jumbo-cover right-bottom";
-    grid-gap: 0.5rem;
-  }
 }
 
 .cover-article {
@@ -248,22 +175,9 @@ main section:not(:first-of-type) {
   background-size: cover;
 }
 
-@media (max-width: 768px) {
-  .cover-article {
-    min-height: 30vh;
-    margin-bottom: 1rem;
-  }
-}
-
 .cover-article:first-of-type {
   grid-area: jumbo-cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/animalfarm-796x448.jpg");
-}
-
-@media (min-width: 1024px) {
-  .cover-article:first-of-type {
-    background-image: linear-gradient(rgba(238, 61, 10, 0.5) 15%, rgba(0, 0, 0, 0.95) 60%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/animalfarm-796x448.jpg");
-  }
 }
 
 .cover-article:nth-of-type(2) {
@@ -290,12 +204,6 @@ main section:not(:first-of-type) {
   color: #fff;
 }
 
-@media (min-width: 768px) {
-  .cover-article:first-of-type .cover-article-title {
-    font-size: 3.2rem;
-  }
-}
-
 .article-meta,
 .article-meta-link {
   margin-top: 0.6em;
@@ -318,48 +226,14 @@ main section:not(:first-of-type) {
   grid-gap: 1.5rem;
 }
 
-@media (min-width: 1024px) {
-  .news {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 1023px) {
-  .news {
-    grid-template-columns: auto auto auto;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 767px) {
-  .news {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .news-list-item {
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width: 767px) {
-  .news-list-item {
-    flex-direction: row;
-  }
-}
-
 .news-cover {
   width: 100%;
   height: 135px;
-}
-
-@media (max-width: 767px) {
-  .news-cover {
-    width: 75px;
-    height: 75px;
-    margin-right: 1rem;
-    object-fit: cover;
-  }
 }
 
 .oh-link {
@@ -402,22 +276,8 @@ main section:not(:first-of-type) {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1023px) {
-  .funding-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 .funding-right-nav {
   margin: 10px 0;
-}
-
-@media screen and (max-width: 767px) {
-  .funding-right-nav {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .funding-right-nav a {
@@ -457,36 +317,10 @@ main section:not(:first-of-type) {
   border-right: 1px solid #f94640;
 }
 
-@media screen and (max-width: 767px) {
-  .funding-right-nav a {
-    margin: 5px 0;
-    border-right: 0 !important;
-  }
-}
-
 .funding-body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
-}
-
-@media screen and (max-width: 1023px) {
-  .funding-body {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .funding-body {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .funding-cell:last-of-type {
-    display: none;
-  }
 }
 
 .funding-cell-head {
@@ -545,27 +379,17 @@ main section:not(:first-of-type) {
   grid-gap: 1.5rem;
 }
 
-@media screen and (max-width: 1023px) {
-  .insights-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .insights-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .insight-article {
   display: flex;
   align-items: flex-end;
   margin-top: 1rem;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
+  height: 275px;
   padding: 10px;
 }
+
+
 
 .hard-work {
   background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg);
@@ -622,12 +446,6 @@ main section:not(:first-of-type) {
   height: 95px;
   margin-left: 15px;
   object-fit: cover;
-}
-
-@media screen and (max-width: 767px) {
-  .latets-img {
-    height: 75px;
-  }
 }
 
 .latest-details {
@@ -694,12 +512,6 @@ main section:not(:first-of-type) {
   background-color: #000;
   color: #aaa;
   font-size: 13px;
-}
-
-@media screen and (max-width: 767px) {
-  .legal {
-    flex-direction: column;
-  }
 }
 
 .legal,
