@@ -99,6 +99,11 @@
     flex-direction: column;
   }
 
+  .latest
+  {
+   padding-bottom: 27px;
+  }
+
   .latets-img {
     height: 75px;
   }
