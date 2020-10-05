@@ -19,7 +19,7 @@ We used some CSS positioning techniques like Flexbox and Grid.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/zdrale/Responsive-Web-Page/5e4da3b555a24aba5aeca9fea2c41704280dbc8f/index.html)
+[Live Demo Link](https://rawcdn.githack.com/zdrale/Responsive-Web-Page/5fa58f32223810d8b20c698c9b4a38b64de0cd99/index.html)
 
 ## Authors
 
