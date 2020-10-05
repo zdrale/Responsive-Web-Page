@@ -35,6 +35,7 @@ main section:not(:first-of-type) {
   width: 100%;
   z-index: 5;
 }
+
 .nav-wrapper {
   position: relative;
 }
@@ -254,7 +255,7 @@ main section:not(:first-of-type) {
   margin-top: 0.5rem;
 }
 
-.funding-cell-head > h4 {
+.funding-cell-head>h4 {
   background-color: #f94640;
   color: #fff;
   overflow: hidden;
@@ -328,12 +329,12 @@ main section:not(:first-of-type) {
   box-sizing: content-box;
 }
 
-.funding-cell-head > div {
+.funding-cell-head>div {
   padding: 10px 16px 10px 84px;
   background: rgba(255, 68, 34, 0.08);
 }
 
-.funding-cell-head > div > h5 {
+.funding-cell-head>div>h5 {
   font-size: 13px;
   color: #aaa;
 }
@@ -388,8 +389,6 @@ main section:not(:first-of-type) {
   height: 275px;
   padding: 10px;
 }
-
-
 
 .hard-work {
   background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg);
@@ -502,7 +501,6 @@ main section:not(:first-of-type) {
   font-size: 13px;
   margin-right: 10px;
   color: #aaa;
-
 }
 
 .legal {
