@@ -21,11 +21,11 @@ main section:not(:first-of-type) {
 
 /* Utility classes */
 .p-0 {
-  padding: 0 !important;
+  padding: 0;
 }
 
 .fw-bold {
-  font-weight: bold !important;
+  font-weight: bold;
 }
 
 /* Header */
@@ -369,7 +369,7 @@ main section:not(:first-of-type) {
 }
 
 .funding-cell-footer .source {
-  color: #aaa !important;
+  color: #aaa;
 }
 
 /* Insights Area */
@@ -498,9 +498,11 @@ main section:not(:first-of-type) {
   justify-content: center;
 }
 
-.bottom-nav li {
+.bottom-nav li a {
   font-size: 13px;
   margin-right: 10px;
+  color: #aaa;
+
 }
 
 .legal {
