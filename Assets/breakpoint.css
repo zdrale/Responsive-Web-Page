@@ -1,0 +1,191 @@
+/* Mobile screen */
+@media (max-width: 767px) {
+  .top-nav {
+    display: none;
+  }
+
+  .main-nav-left {
+    display: none;
+  }
+
+  .main-nav-right {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mnr-list-item:not(:first-child) {
+    display: inline;
+  }
+
+  .dark-logo-wrapper {
+    display: inline-flex;
+    height: 100%;
+  }
+
+  .alert {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .cover-section {
+    margin-top: 54px;
+  }
+
+  .cover-article {
+    min-height: 30vh;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem 0.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .news {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .news h4 {
+    margin-top: 0;
+  }
+
+  .news-list-item {
+    flex-direction: row;
+  }
+
+  .news-cover {
+    width: 75px;
+    height: 75px;
+    margin-right: 1rem;
+    object-fit: cover;
+  }
+
+  .funding-right-nav a {
+    margin: 5px 0;
+  }
+
+  .funding-right-nav a:not(:last-child) {
+    border-right: 0;
+  }
+
+  .funding-body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .funding-cell:last-of-type {
+    display: none;
+  }
+
+  .funding-header {
+    flex-wrap: wrap;
+  }
+
+  .funding-right-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .insights-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .legal {
+    flex-direction: column;
+  }
+
+  .legal > * {
+    margin-bottom: 0.5em;
+  }
+}
+
+/* Medium size */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top-nav,
+  .main-nav {
+    padding-left: 110px;
+  }
+
+  .dark-logo-wrapper {
+    display: inline-flex;
+    height: 100%;
+  }
+
+  .news {
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .funding-header {
+    display: block;
+  }
+
+  .funding-body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .funding-cell:last-of-type {
+    display: none;
+  }
+
+  .insights-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cover-section {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 66.66% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "jumbo-cover right-top"
+      "jumbo-cover right-bottom";
+    grid-gap: 0.5rem;
+  }
+
+  .alert {
+    display: none;
+  }
+}
+
+/* Big screen */
+@media (min-width: 1024px) {
+  .cover-section {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 66.66% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "jumbo-cover right-top"
+      "jumbo-cover right-bottom";
+    grid-gap: 0.5rem;
+  }
+
+  .news {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cover-article:first-of-type {
+    background-image: linear-gradient(rgba(238, 61, 10, 0.5) 15%, rgba(0, 0, 0, 0.95) 60%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/animalfarm-796x448.jpg");
+  }
+
+  .cover-article:first-of-type .cover-article-title {
+    font-size: 2.5rem;
+  }
+
+  .funding-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,576 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(#ededed, #f0f0f0);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+main section:not(:first-of-type) {
+  padding: 0 1rem;
+  max-width: 1192px;
+  margin: auto auto 4em auto;
+}
+
+/* Utility classes */
+.p-0 {
+  padding: 0;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #131313;
+  padding: 9px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tn-list-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.top-nav-link {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.top-nav .top-nav-link:hover {
+  color: #fff;
+}
+
+.top-nav-left {
+  float: left;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Dark logo */
+.dark-logo-wrapper {
+  height: 100%;
+  background: #000;
+  padding: 0 1.2rem;
+  margin-right: 0.5rem;
+  display: none;
+  position: absolute;
+}
+
+.dark-logo-wrapper .dark-logo {
+  width: 66px;
+}
+
+.main-nav-left {
+  display: inline-flex;
+}
+
+.mnl-list-item {
+  display: inline;
+  margin-right: 15px;
+  padding: 1rem 0;
+}
+
+.mnl-link {
+  color: #aaa;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.mnl-link:hover {
+  color: #131313;
+}
+
+.main-nav-right {
+  display: inline-flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.mnr-list-item {
+  display: inline;
+  padding: 1rem;
+  border-left: 1px solid #eee;
+}
+
+.mnr-list-item:not(:first-child) {
+  display: none;
+}
+
+.mnr-list-item:nth-of-type(2) .mnr-link {
+  color: #f42;
+}
+
+.logo {
+  height: auto;
+  width: 125px;
+}
+
+.counter {
+  color: red;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.get-tickets {
+  color: white;
+  border: none;
+  background-color: #0cc;
+  border-radius: 4px;
+  padding: 8.5px;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* Cover artciels section */
+.cover-section {
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 3rem;
+  margin-top: 84px;
+}
+
+.cover-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem 0.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover-article:first-of-type {
+  grid-area: jumbo-cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/animalfarm-796x448.jpg");
+}
+
+.cover-article:nth-of-type(2) {
+  grid-area: right-top;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/TNW2020-feature.jpg");
+}
+
+.cover-article:last-of-type {
+  grid-area: right-bottom;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_85e519-796x415.png");
+}
+
+.cover-article-category {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cover-article-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.article-meta,
+.article-meta-link {
+  margin-top: 0.6em;
+  color: rgb(175, 175, 175);
+  font-size: 12px;
+}
+
+.deal-price {
+  margin-top: 10px;
+}
+
+.deal-price > s {
+  font-size: 14px;
+  line-height: 14px;
+  color: #aaa;
+}
+
+/* Latest news section */
+.latest-news {
+  padding: 2rem 0.5rem;
+  margin-top: 15px;
+}
+
+.latest-news .latest-news-title {
+  margin-bottom: 1.5rem;
+}
+
+.news {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.news-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.oh-link {
+  color: #f42;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.oh-link:hover {
+  color: #000;
+}
+
+.news h4 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.news h4:hover {
+  color: #f42;
+  text-decoration: underline;
+  text-decoration-color: #ffc8be;
+}
+
+/* Latest funding section */
+.funding-cell {
+  background-color: rgba(255, 68, 34, 0.03);
+}
+
+.funding-cell-title {
+  background-color: #f94640;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+  padding: 10px 16px 10px 84px;
+}
+
+.funding-right-nav {
+  margin: 10px 0;
+}
+
+.funding-right-nav a {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #f94640;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.funding-right-nav a:not(:last-of-type) {
+  border-right: 1px solid #f94640;
+}
+
+.funding-body-link {
+  font-size: 13px;
+  color: #555;
+}
+
+.funding-footer-link {
+  color: #555;
+}
+
+.latest-title {
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  margin-bottom: 5px;
+}
+
+.latest-link {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.latest-title,
+.latest-link {
+  color: #f42;
+}
+
+.funding-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.funding-cell-head {
+  position: relative;
+  box-sizing: content-box;
+}
+
+.funding-cell-head > div {
+  padding: 10px 16px 10px 84px;
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.funding-cell-head > div > h5 {
+  margin-top: 3px;
+  font-size: 14px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #000;
+  opacity: 0.5;
+}
+
+.funding-cell img {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 10px;
+  margin: 10px;
+  z-index: 3;
+}
+
+.funding-cell-body {
+  padding: 1rem;
+}
+
+.funding-cell-body li {
+  padding: 5px 0;
+}
+
+.funding-cell-body li a i {
+  color: #000;
+  font-size: 16px;
+}
+
+.funding-cell-footer {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 1rem 1rem 2rem 1rem;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+}
+
+.funding-cell-footer .source {
+  color: #aaa;
+}
+
+/* Insights Area */
+.insights-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.insight-cell {
+  margin-bottom: 24px;
+}
+
+.insight-article {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1rem;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.insight-cover-img {
+  width: 100%;
+}
+
+.hard-work {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg);
+}
+
+.apps {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_248964-368x276.png);
+}
+
+.gear {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-368x276.png);
+}
+
+.tech {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/methane_mars_1200-368x276.png);
+}
+
+.creative {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg);
+}
+
+.podium {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
+}
+
+.insights {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png);
+}
+
+.launch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2-1-368x276.jpg);
+}
+
+.distract {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png);
+}
+
+.most-popular {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
+}
+
+.most-popular-link {
+  color: #fff;
+  font-size: 20px;
+}
+
+.most-popular-title {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.most-popular h2 {
+  font-weight: bold;
+}
+
+.most-popular p {
+  color: #9f9f9e;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin: 10px 0 20px;
+}
+
+.latest {
+  display: flex;
+  background: #fef2f1;
+  margin: 2px 0;
+}
+
+.latest-body {
+  padding: 10px;
+}
+
+.latest-img {
+  display: inline-flex;
+  margin-left: auto;
+  background-position: center;
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+}
+
+.latest-details {
+  padding: 0 20px;
+}
+
+.latest-details li {
+  padding: 6px;
+  border-bottom: 1px solid #eee;
+  list-style-type: disc;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #555;
+  opacity: 0.6;
+  font-family: sans-serif;
+}
+
+.latest-details li:hover {
+  color: #000;
+  opacity: 1;
+}
+
+.latest-details li::marker {
+  color: #f42;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5em 1em;
+  background: #131313;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+
+.social-icon-link {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333;
+  margin: 0 0.25rem;
+  color: #fff;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-nav-item {
+  margin: 0 0.5em;
+}
+
+.bottom-nav-link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.legal {
+  padding: 2.5em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.legal-text {
+  display: flex;
+}
+
+.legal img {
+  width: 40px;
+  margin-right: 5px;
+}
