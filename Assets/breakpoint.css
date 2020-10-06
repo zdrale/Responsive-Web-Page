@@ -4,7 +4,7 @@
     display: none;
   }
 
-  .main-nav-left:first-of-type {
+  .main-nav-left {
     display: none;
   }
 
@@ -14,7 +14,7 @@
     justify-content: flex-end;
   }
 
-  .mnr-list-item:nth-of-type(2) {
+  .mnr-list-item:not(:first-child) {
     display: inline;
   }
 
@@ -31,13 +31,13 @@
     width: 100%;
   }
 
-  .news {
-    grid-template-columns: repeat(1, 1fr);
+  .cover-section {
+    margin-top: 54px;
   }
 
   .cover-article {
     min-height: 30vh;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -45,6 +45,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .news {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .news h4 {
+    margin-top: 0;
   }
 
   .news-list-item {
@@ -60,35 +68,30 @@
 
   .funding-right-nav a {
     margin: 5px 0;
-    border-right: 0 !important;
+  }
+
+  .funding-right-nav a:not(:last-child) {
+    border-right: 0;
   }
 
   .funding-body {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .funding-cell:last-of-type
-  {
+
+  .funding-cell:last-of-type {
     display: none;
   }
 
-  .funding-header
-  {
+  .funding-header {
     flex-wrap: wrap;
-  } 
-
-  .funding-right-nav
-  {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   margin-top: 10px;
   }
 
-  .orange-header
-  {
-   height: 30px;
+  .funding-right-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
   }
 
   .insights-wrapper {
@@ -99,17 +102,8 @@
     flex-direction: column;
   }
 
-  .latest
-  {
-   padding-bottom: 27px;
-  }
-
-  .latets-img {
-    height: 75px;
-  }
-
-  .mnr-list-item:not(:first-child):not(:nth-of-type(2)) {
-    display: none;
+  .legal > * {
+    margin-bottom: 0.5em;
   }
 }
 
@@ -131,7 +125,7 @@
   }
 
   .funding-header {
-  display: block;
+    display: block;
   }
 
   .funding-body {
@@ -155,14 +149,9 @@
       "jumbo-cover right-top"
       "jumbo-cover right-bottom";
     grid-gap: 0.5rem;
-    margin-top: 75px;
   }
 
   .alert {
-    display: none;
-  }
-
-  .mnr-list-item:not(:first-child):not(:nth-of-type(2)) {
     display: none;
   }
 }

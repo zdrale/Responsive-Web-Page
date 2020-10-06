@@ -6,6 +6,7 @@
 
 body {
   font-family: sans-serif;
+  background: linear-gradient(#ededed, #F0F0F0);
 }
 
 a {
@@ -16,7 +17,7 @@ a {
 main section:not(:first-of-type) {
   padding: 0 1rem;
   max-width: 1192px;
-  margin: auto auto 4.5em auto;
+  margin: auto auto 4em auto;
 }
 
 /* Utility classes */
@@ -34,10 +35,7 @@ main section:not(:first-of-type) {
   top: 0;
   width: 100%;
   z-index: 5;
-}
-
-.nav-wrapper {
-  position: relative;
+  background-color: #fff;
 }
 
 .top-nav {
@@ -51,7 +49,7 @@ main section:not(:first-of-type) {
 
 .tn-list-item {
   display: inline;
-  margin: 0 8px;
+  margin-right: 10px;
 }
 
 .top-nav-link {
@@ -70,7 +68,7 @@ main section:not(:first-of-type) {
 .main-nav {
   display: flex;
   align-items: center;
-  background-color: #fefefe;
+  background-color: #fff;
   padding: 0 0.5rem;
   font-family: 'Roboto', sans-serif;
 }
@@ -79,7 +77,7 @@ main section:not(:first-of-type) {
 .dark-logo-wrapper {
   height: 100%;
   background: #000;
-  padding: 0 1rem;
+  padding: 0 1.2rem;
   margin-right: 0.5rem;
   display: none;
   position: absolute;
@@ -93,25 +91,18 @@ main section:not(:first-of-type) {
   display: inline-flex;
 }
 
-.mnr-list-item {
-  margin-left: 15px;
-}
-
-.mnr-list-item:nth-of-type(2) {
-  display: none;
-}
-
-.main-nav-left .mnl-list-item,
-.main-nav-right .mnr-list-item:not(:last-of-type) {
+.mnl-list-item {
   display: inline;
   margin-right: 15px;
-  padding: 0.8rem 0;
+  padding: 1rem 0;
 }
 
 .mnl-link {
   color: #aaa;
+  font-size: 16px;
   text-decoration: none;
-  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .mnl-link:hover {
@@ -122,7 +113,16 @@ main section:not(:first-of-type) {
   display: inline-flex;
   margin-left: auto;
   align-items: center;
+}
+
+.mnr-list-item {
+  display: inline;
+  padding: 1rem;
   border-left: 1px solid #eee;
+}
+
+.mnr-list-item:not(:first-child) {
+  display: none;
 }
 
 .mnr-list-item:nth-of-type(2) .mnr-link {
@@ -151,19 +151,11 @@ main section:not(:first-of-type) {
   font-weight: bold;
 }
 
-/* Alert */
-.alert {
-  background-color: #fd3;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-family: Helvetica, sans-serif;
-}
-
 /* Cover artciels section */
 .cover-section {
   padding: 0.2rem 0.5rem;
   margin-bottom: 3rem;
-  margin-top: 90px;
+  margin-top: 84px;
 }
 
 .cover-article {
@@ -212,6 +204,16 @@ main section:not(:first-of-type) {
   font-size: 12px;
 }
 
+.deal-price {
+  margin-top: 10px;
+}
+
+.deal-price > s {
+  font-size: 14px;
+  line-height: 14px;
+  color: #aaa;
+}
+
 /* Latest news section */
 .latest-news {
   padding: 2rem 0.5rem;
@@ -219,7 +221,7 @@ main section:not(:first-of-type) {
 }
 
 .latest-news .latest-news-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .news {
@@ -234,7 +236,8 @@ main section:not(:first-of-type) {
 
 .news-cover {
   width: 100%;
-  height: 135px;
+  height: auto;
+  object-fit: cover;
 }
 
 .oh-link {
@@ -255,13 +258,6 @@ main section:not(:first-of-type) {
   margin-top: 0.5rem;
 }
 
-.funding-cell-head > h4 {
-  background-color: #f94640;
-  color: #fff;
-  overflow: hidden;
-  padding: 10px 16px 10px 84px;
-}
-
 .news h4:hover {
   color: #f42;
   text-decoration: underline;
@@ -269,28 +265,35 @@ main section:not(:first-of-type) {
 }
 
 /* Latest funding section */
+.funding-cell {
+  background-color: rgba(255, 68, 34, .03)
+}
 
+.funding-cell-head > h4 {
+  background-color: #f94640;
+  color: #fff;
+  overflow: hidden;
+  padding: 10px 16px 10px 84px;
+}
 
 .funding-right-nav {
   margin: 10px 0;
 }
 
 .funding-right-nav a {
-  font-size: 16px;
+  font-size: 14px;
   font-family: sans-serif;
   color: #f94640;
   margin-right: 10px;
   padding-right: 10px;
 }
 
-.funding-cell-footer a {
-  color: #555;
+.funding-right-nav a:not(:last-of-type) {
+  border-right: 1px solid #f94640;
 }
 
-.most-popular a {
-  color: #fff;
-  font-size: 20px;
-  font-family: sans-serif;
+.funding-cell-footer a {
+  color: #555;
 }
 
 .funding-cell-body li a {
@@ -298,18 +301,20 @@ main section:not(:first-of-type) {
   color: #555;
 }
 
+.latest-title {
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  margin-bottom: 5px;
+}
+
 .latest-link {
   font-weight: bold;
+  font-size: 14px;
 }
 
 .latest-title,
 .latest-link {
-  font-size: 16px;
   color: #f42;
-}
-
-.funding-right-nav a:not(:last-of-type) {
-  border-right: 1px solid #f94640;
 }
 
 .funding-body {
@@ -329,8 +334,11 @@ main section:not(:first-of-type) {
 }
 
 .funding-cell-head > div > h5 {
-  font-size: 13px;
-  color: #aaa;
+  margin-top: 3px;
+  font-size: 14px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #000;
+  opacity: 0.5;
 }
 
 .funding-cell img {
@@ -344,11 +352,10 @@ main section:not(:first-of-type) {
 
 .funding-cell-body {
   padding: 1rem;
-  background-color: #fffaf8;
 }
 
 .funding-cell-body li {
-  padding: 4px 0;
+  padding: 5px 0;
 }
 
 .funding-cell-body li a i {
@@ -358,8 +365,8 @@ main section:not(:first-of-type) {
 
 .funding-cell-footer {
   font-size: 13px;
+  line-height: 1.5;
   padding: 1rem 1rem 2rem 1rem;
-  background-color: #fffaf8;
   border-top: 1px solid rgba(255, 68, 34, 0.25);
 }
 
@@ -374,14 +381,21 @@ main section:not(:first-of-type) {
   grid-gap: 1.5rem;
 }
 
+.insight-cell {
+  margin-bottom: 24px;
+}
+
 .insight-article {
   display: flex;
   align-items: flex-end;
   margin-top: 1rem;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 275px;
-  padding: 10px;
+}
+
+.insight-cover-img {
+  width: 100%;
 }
 
 .hard-work {
@@ -420,59 +434,97 @@ main section:not(:first-of-type) {
   background-image: linear-gradient(rgba(0, 0, 0, 0), #000), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png);
 }
 
+.most-popular {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
+}
+
+.most-popular a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.most-popular h5 {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.most-popular h2 {
+  font-weight: bold;
+}
+
 .most-popular p {
   color: #9f9f9e;
   font-size: 13px;
   font-family: sans-serif;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 
 .latest {
-  padding: 10px 0 33px 15px;
+  display: flex;
   background: #fef2f1;
+  margin: 2px 0;
 }
 
-.latets-img {
-  float: right;
+.latest-body {
+  padding: 10px;
+}
+
+.latest-img {
+  display: inline-flex;
+  margin-left: auto;
   background-position: center;
   width: 95px;
   height: 95px;
-  margin-left: 15px;
   object-fit: cover;
 }
 
 .latest-details {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .latest-details li {
-  padding: 5px;
-  border-bottom: solid 1px #eee;
+  padding: 6px;
+  border-bottom: 1px solid #eee;
   list-style-type: disc;
   font-size: 13px;
+  line-height: 1.5;
   color: #555;
+  opacity: 0.6;
   font-family: sans-serif;
 }
 
-.latest-details li::after {
+.latest-details li:hover {
+  color: #000;
+  opacity: 1;
+}
+
+.latest-details li::marker {
   color: #f42;
 }
 
 .social {
-  background: #131313;
-  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 160px;
-  box-sizing: border-box;
+  padding: 2.5em 1em;
+  background: #131313;
+  color: #fff;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
 }
 
 .social-icon-link {
@@ -482,23 +534,28 @@ main section:not(:first-of-type) {
   height: 40px;
   border-radius: 50%;
   background: #333;
-  margin-right: 10px;
+  margin: 0 0.25rem;
+  color: #fff;
 }
 
-.social,
 .bottom-nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-nav-item {
+  margin: 0 0.5em;
 }
 
 .bottom-nav-link {
-  font-size: 13px;
-  margin-right: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
   color: #aaa;
 }
 
 .legal {
-  height: 120px;
+  padding: 2.5em 1em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -508,7 +565,6 @@ main section:not(:first-of-type) {
   font-size: 13px;
 }
 
-.legal,
 .legal-text {
   display: flex;
 }
