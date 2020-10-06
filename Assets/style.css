@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  background: linear-gradient(#ededed, #F0F0F0);
+  background: linear-gradient(#ededed, #f0f0f0);
 }
 
 a {
@@ -266,11 +266,12 @@ main section:not(:first-of-type) {
 
 /* Latest funding section */
 .funding-cell {
-  background-color: rgba(255, 68, 34, .03)
+  background-color: rgba(255, 68, 34, 0.03);
 }
 
-.funding-cell-head > h4 {
+.funding-cell-title {
   background-color: #f94640;
+  font-weight: bold;
   color: #fff;
   overflow: hidden;
   padding: 10px 16px 10px 84px;
@@ -292,12 +293,12 @@ main section:not(:first-of-type) {
   border-right: 1px solid #f94640;
 }
 
-.funding-cell-footer a {
+.funding-body-link {
+  font-size: 13px;
   color: #555;
 }
 
-.funding-cell-body li a {
-  font-size: 13px;
+.funding-footer-link {
   color: #555;
 }
 
@@ -445,12 +446,12 @@ main section:not(:first-of-type) {
   background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
 }
 
-.most-popular a {
+.most-popular-link {
   color: #fff;
   font-size: 20px;
 }
 
-.most-popular h5 {
+.most-popular-title {
   text-transform: uppercase;
   font-size: 10px;
   font-family: 'Share Tech Mono', monospace;
