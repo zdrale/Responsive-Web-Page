@@ -2,7 +2,7 @@
 
 > Clone of The NextWeb webpage with responsive layout
 
-![screenshot](images/TheNextWeb.png)
+![screenshot](images/screenshot.png)
 
 This project is the sixth one in the HTML/CSS module at Microverse. Main goal was to build responsive web page. We cloned The Next Web.
 
